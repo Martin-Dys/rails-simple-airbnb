@@ -4,12 +4,27 @@
     <title>RailsSimpleAirbnb</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+     <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Waterbnb</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Flats</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Find</a></li>
+      </ul>
+    </div>
+   </nav>
     <%= yield %>
+
   </body>
 </html>

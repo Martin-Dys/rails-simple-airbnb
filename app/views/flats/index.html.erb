@@ -1,0 +1,14 @@
+<h1 class="text-info"> All our flats</h1>
+
+<ul>
+
+<% @flats.each do |flat|%>
+<li>
+  <div class="container">
+    <h3> <%= link_to flat.name, flat_path(flat) %></h3>
+    <p> <%= "#{flat.price_per_night} €" %></p>
+    <p> <%= flat.number_of_guests %></p>
+  </div>
+</li>
+  <% end %>
+</ul>
